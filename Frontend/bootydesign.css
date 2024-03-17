@@ -1,0 +1,47 @@
+body { font-family: sans-serif; }
+
+div {
+  text-align: center;
+}
+
+
+span {
+  background: #48abe0;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+
+span.strong-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+span.rise-shake {
+  animation: jump-shaking 0.83s infinite;
+}
+
+@keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+body { font-family: sans-serif; }
+
+div {
+  text-align: center;
+}
+
+
+span {
+  background: #000000;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+span.bootyShake:hover{
+    animation: bootybootyshake 0.1s infinite;
+}
+
+@keyframes bootybootyshake{
+
+    0%{ transform: translate(0,0) rotate(0deg);}
+    25%{ transform: translate(5px,5px) rotate(5deg);}
+    50%{ transform: translate(0,0) rotate(0deg);}
+    75%{ transform: translate(-5px,5px) rotate(-5deg);}
+    100%{ transform: translate(0,0) rotate(0deg);}
+}
